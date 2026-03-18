@@ -38,7 +38,7 @@ export default function Page() {
 
       {/* HERO — flyer5 (website mockup) as BG, transparent vinyl logo */}
       <section ref={h} className="hw" style={{position:'relative',width:'100%',height:'100vh',overflow:'hidden',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
-        <div className="sbg" style={{backgroundImage:'url(/flyer5.jpg)',opacity:.08,filter:'brightness(.2) saturate(.4)'}}/>
+        <div className="sbg" style={{backgroundImage:'url(/flyer5.jpg)',opacity:.08,filter:'brightness(.4) saturate(.4)'}}/>
         <div style={{position:'absolute',inset:0,background:`radial-gradient(ellipse at 50% 40%,rgba(200,163,72,.15) 0%,${C.bg} 60%)`,zIndex:1}}/>
         <div style={{position:'absolute',inset:0,background:`linear-gradient(180deg,transparent 0%,rgba(13,14,18,.5) 70%,${C.bg} 100%)`,zIndex:2}}/>
         <div className="hl" style={{position:'relative',zIndex:3}}><img src="/logo.png" alt="REMIX" style={{width:'min(50vw,420px)',height:'auto',filter:'drop-shadow(0 0 80px rgba(200,163,72,.4))'}}/></div>
@@ -53,7 +53,7 @@ export default function Page() {
 
       {/* CULTURE — flyer1 scattered BG right side */}
       <section id="culture" style={{position:'relative',padding:'140px clamp(24px,5vw,80px)',overflow:'hidden'}}>
-        <div className="sbg" style={{backgroundImage:'url(/flyer1.jpg)',backgroundPosition:'85% center',backgroundSize:'45%',opacity:.055,filter:'brightness(.2) saturate(.4)'}}/>
+        <div className="sbg" style={{backgroundImage:'url(/flyer1.jpg)',backgroundPosition:'85% center',backgroundSize:'45%',opacity:.145,filter:'brightness(.4) saturate(.4)'}}/>
         <div className="dg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:80,alignItems:'center',position:'relative',zIndex:1}}>
           <div className="r">
             <div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.4em',textTransform:'uppercase',color:C.gold,marginBottom:24}}>The Movement</div>
@@ -70,7 +70,7 @@ export default function Page() {
 
       {/* CINEMATIC BREAK — flyer2 full bleed */}
       <section style={{position:'relative',height:'70vh',overflow:'hidden'}}>
-        <img src="/flyer2.jpg" alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',filter:'brightness(.25) saturate(.5)'}}/>
+        <img src="/flyer2.jpg" alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',filter:'brightness(.4) saturate(.5)'}}/>
         <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(13,14,18,.8) 0%,rgba(13,14,18,.15) 40%,rgba(13,14,18,.8) 100%)'}}/>
         <div className="r" style={{position:'relative',zIndex:1,height:'100%',display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column',textAlign:'center'}}>
           <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(40px,8vw,100px)',color:C.light,lineHeight:.85}}>YOUR PRESENCE<br/>IS <span style={{color:C.gold}}>REQUIRED</span></h2>
@@ -80,7 +80,7 @@ export default function Page() {
 
       {/* EXPERIENCE — flyer4 scattered BG left */}
       <section id="events" style={{position:'relative',background:'#0A0B0E',padding:'120px clamp(24px,5vw,80px)',overflow:'hidden'}}>
-        <div className="sbg" style={{backgroundImage:'url(/flyer4.jpg)',backgroundPosition:'8% center',backgroundSize:'35%',opacity:.045,filter:'brightness(.2) saturate(.4)'}}/>
+        <div className="sbg" style={{backgroundImage:'url(/flyer4.jpg)',backgroundPosition:'8% center',backgroundSize:'35%',opacity:.125,filter:'brightness(.4) saturate(.4)'}}/>
         <div style={{maxWidth:1400,margin:'0 auto',position:'relative',zIndex:1}}>
           <div className="r"><h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(36px,6vw,80px)',lineHeight:.9,color:C.light,marginBottom:64}}>THE <span style={{color:C.gold}}>EXPERIENCE</span></h2></div>
           <div className="eg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:2,background:'rgba(200,163,72,.06)'}}>
@@ -95,7 +95,7 @@ export default function Page() {
 
       {/* TICKETS — logo as BG center */}
       <section id="tickets" style={{position:'relative',padding:'140px clamp(24px,5vw,80px)',overflow:'hidden'}}>
-        <div className="sbg" style={{backgroundImage:'url(/logo.png)',backgroundPosition:'center',backgroundSize:'30%',opacity:.05,filter:'brightness(.3)'}}/>
+        <div className="sbg" style={{backgroundImage:'url(/logo.png)',backgroundPosition:'center',backgroundSize:'30%',opacity:.14,filter:'brightness(.45)'}}/>
         <div style={{position:'absolute',inset:0,background:`radial-gradient(ellipse at 50% 50%,rgba(200,163,72,.15) 0%,transparent 60%)`}}/>
         <div className="r" style={{maxWidth:720,margin:'0 auto',textAlign:'center',position:'relative',zIndex:1}}>
           <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:C.light,marginBottom:24}}>LOCK IN<br/><span style={{color:C.gold}}>ACCESS</span></h2>
