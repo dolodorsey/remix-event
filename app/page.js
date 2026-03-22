@@ -10,7 +10,7 @@ export default function Page() {
   }, []);
   const C = { bg: '#0D0E12', light: '#F3F3F1', gold: '#C8A348' };
   return (
-    <div style={{background:C.bg,color:C.light,fontFamily:"'DM Sans',sans-serif"}}>
+    <div style={{background:C.bg,color:C.light,fontFamily:"'DM Sans',sans-serif",overflowX:'hidden'}}>
       <style dangerouslySetInnerHTML={{__html:`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
         *{margin:0;padding:0;box-sizing:border-box}
@@ -83,7 +83,7 @@ export default function Page() {
         <div className="sbg" style={{backgroundImage:'url(/flyer4.jpg)',backgroundPosition:'8% center',backgroundSize:'35%',opacity:.125,filter:'brightness(.4) saturate(.4)'}}/>
         <div style={{maxWidth:1400,margin:'0 auto',position:'relative',zIndex:1}}>
           <div className="r"><h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(36px,6vw,80px)',lineHeight:.9,color:C.light,marginBottom:64}}>THE <span style={{color:C.gold}}>EXPERIENCE</span></h2></div>
-          <div className="eg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:2,background:'rgba(200,163,72,.06)'}}>
+          <div className="dg eg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:2,background:'rgba(200,163,72,.06)'}}>
             {[['CURATED DJ SETS','Genre-bending selections from ATL\'s finest'],['PREMIUM SOUND','Audiophile-grade system. Feel every frequency.'],['VIP BOTTLE SERVICE','Dedicated tables, personal server, guaranteed entry'],['LIVE PERFORMERS','Surprise guest appearances and live instruments'],['CONTENT MOMENTS','Branded photo activations designed for social'],['DRESS CODE','Elevated dress code. No exceptions.'],['MEDIA & PARTNERS','Brand activations and exclusive media access'],['LATE NIGHT VIBES','Doors at 10PM. Energy builds all night.'],['EXCLUSIVE ACCESS','Limited capacity. RSVP required.']].map(([t,d],i)=>
               <div key={i} className={`r d${i%3+1}`} style={{background:C.bg,padding:'36px 32px',borderLeft:'2px solid transparent',transition:'all .3s'}} onMouseEnter={e=>{e.currentTarget.style.borderLeftColor=C.gold;e.currentTarget.style.background='#0A0B0E'}} onMouseLeave={e=>{e.currentTarget.style.borderLeftColor='transparent';e.currentTarget.style.background=C.bg}}>
                 <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(16px,1.8vw,22px)',letterSpacing:'.04em',color:C.light,marginBottom:8}}>{t}</div>
@@ -105,7 +105,7 @@ export default function Page() {
       </section>
 
       <footer style={{background:'#080910',borderTop:'1px solid rgba(200,163,72,.08)',padding:'56px clamp(24px,5vw,80px) 36px'}}>
-        <div className="fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
+        <div className="dg fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
           <div><div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:32,color:C.gold}}>REMIX</div><div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.3em',color:'rgba(200,163,72,.5)',marginTop:4}}>THEN & NOW, DONE RIGHT · ATL</div><p style={{fontSize:12,color:'rgba(243,243,241,.3)',marginTop:12,lineHeight:1.7}}>A KHG HugLife Event.</p></div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:C.gold,marginBottom:16}}>EVENT</div>{['Culture','Events','Gallery'].map(l=><div key={l} style={{fontSize:12,color:'rgba(243,243,241,.3)',marginBottom:8}}>{l}</div>)}</div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:C.gold,marginBottom:16}}>CONNECT</div>{['RSVP','@just.huglife','404.819.9609'].map(l=><div key={l} style={{fontSize:12,color:'rgba(243,243,241,.3)',marginBottom:8}}>{l}</div>)}</div>
