@@ -47,7 +47,7 @@ export default function Page() {
           <p style={{fontFamily:"'DM Mono',monospace",fontSize:10,letterSpacing:'.4em',textTransform:'uppercase',color:'rgba(200,163,72,.6)',marginTop:16}}>Then & Now, Done Right · Atlanta</p>
         </div>
         <div className="hc" style={{position:'relative',zIndex:3,display:'flex',gap:16,marginTop:40,flexWrap:'wrap',justifyContent:'center'}}>
-          <a href="#tickets" className="bp">Access The Night</a><a href="#culture" className="bo">Explore</a>
+          <a href="#tickets" className="bp">ACCESS THE NIGHT →</a><a href="#culture" className="bo">Explore</a>
         </div>
       </section>
 
@@ -100,7 +100,7 @@ export default function Page() {
         <div className="r" style={{maxWidth:720,margin:'0 auto',textAlign:'center',position:'relative',zIndex:1}}>
           <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:C.light,marginBottom:24}}>LOCK IN<br/><span style={{color:C.gold}}>ACCESS</span></h2>
           <p style={{fontSize:15,lineHeight:1.8,color:'rgba(243,243,241,.45)',maxWidth:440,margin:'0 auto 44px'}}>RSVP now. Secure your REMIX access.</p>
-          <a href="https://huglife.vercel.app/#tickets" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>RSVP Now →</a>
+          <a href="https://www.eventbrite.com/e/remix-the-mashup-music-experience-tickets-1985661232198" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>RSVP →</a>
         </div>
       </section>
 
