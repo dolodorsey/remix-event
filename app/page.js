@@ -112,6 +112,22 @@ export default function Page() {
         </div>
         <div style={{maxWidth:1400,margin:'24px auto 0',paddingTop:20,borderTop:'1px solid rgba(200,163,72,.06)',fontSize:10,fontFamily:"'DM Mono',monospace",color:'rgba(243,243,241,.12)'}}>© 2026 REMIX. A KHG Enterprise.</div>
       </footer>
-    </div>
+    
+
+      {/* VENUE */}
+      <div style={{padding:"48px 24px", textAlign:"center", borderTop:"1px solid rgba(255,255,255,0.07)"}}>
+        <p style={{fontSize:"10px", letterSpacing:"4px", color:"#C9A84C", textTransform:"uppercase", marginBottom:"12px", fontFamily:"'DM Sans',system-ui,sans-serif"}}>Location</p>
+        <h3 style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:"clamp(22px,4vw,38px)", fontWeight:300, color:"#fff", marginBottom:"8px"}}>
+          The Gallery Complex
+        </h3>
+        <p style={{color:"#666", fontSize:"13px", letterSpacing:"1px", marginBottom:"20px", fontFamily:"'DM Sans',system-ui,sans-serif"}}>
+          245 Ted Turner Drive SW, Atlanta, GA 30303
+        </p>
+        <a href="https://maps.google.com/?q=245+Ted+Turner+Drive+SW+Atlanta+GA+30303" target="_blank" rel="noopener noreferrer"
+          style={{display:"inline-block", padding:"11px 26px", border:"1px solid rgba(201,168,76,0.35)", color:"#C9A84C", fontSize:"11px", letterSpacing:"3px", textTransform:"uppercase", textDecoration:"none", fontFamily:"'DM Sans',system-ui,sans-serif"}}>
+          Get Directions →
+        </a>
+      </div>
+</div>
   );
 }
