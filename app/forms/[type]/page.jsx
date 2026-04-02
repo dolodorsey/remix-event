@@ -1,4 +1,26 @@
 'use client';
+
+export function generateStaticParams() {
+  return [
+    { type: 'vendor' },
+    { type: 'sponsor' },
+    { type: 'artist-music' },
+    { type: 'artist_painter' },
+    { type: 'influencer' },
+    { type: 'general-inquiry' },
+    { type: 'consultation' },
+    { type: 'onboarding' },
+    { type: 'what_you_do' },
+    { type: 'volunteer' },
+    { type: 'rsvp' },
+    { type: 'intern' },
+    { type: 'hiring-inquiry' },
+    { type: 'group-pricing' },
+    { type: 'table-reservation' },
+    { type: 'nda' },
+  ];
+}
+
 import { useState } from 'react';
 
 const BRAND_KEY = 'remix';
