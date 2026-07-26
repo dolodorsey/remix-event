@@ -1,3 +1,5 @@
+import DirectEventActions from './DirectEventActions';
+
 export const metadata = {
   title: 'REMIX | Curated Social Magnetism · Atlanta',
   description: 'Then & Now, Done Right. Premium sound, deep rhythm, future vibes. A KHG HugLife Event.',
@@ -12,6 +14,7 @@ export default function RootLayout({ children }) {
       </head>
       <body style={{ margin: 0, padding: 0, background: '#080808' }}>
         {children}
+        <DirectEventActions />
       </body>
     </html>
   )
